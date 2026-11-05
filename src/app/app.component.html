@@ -45,7 +45,7 @@
           <div class="product-image-wrap">
             <img [src]="product.image" [alt]="product.name" loading="lazy">
             @if (product.badge) { <span class="product-badge">{{ product.badge }}</span> }
-            <button type="button" class="quick-add" (click)="addToCart(product)" [attr.aria-label]="'Añadir ' + product.name + ' a la bolsa">Añadir a la bolsa <span>＋</span></button>
+            <button type="button" class="quick-add" (click)="addToCart(product)" [attr.aria-label]="'Añadir ' + product.name + ' a la bolsa'">Añadir a la bolsa <span>＋</span></button>
           </div>
           <div class="product-meta"><div><h3>{{ product.name }}</h3><p>{{ product.color }}</p></div><strong>${{ product.price }}</strong></div>
         </article>
